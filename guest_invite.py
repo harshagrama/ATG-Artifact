@@ -1,4 +1,10 @@
 import requests 
+import ConfigParser
+
+config = ConfigParser.ConfigParser()
+config.read("config.ini")
+channels=config.sections()
+print ("Channels ->>%s" %channels) 
 
 #api-endpoint
 URL = "https://slack.com/api/users.admin.invite"
