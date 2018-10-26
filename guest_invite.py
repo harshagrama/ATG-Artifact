@@ -28,16 +28,15 @@ class InviteGuest:
                    emails = data[option].split(',')
             for email in emails:
                 data['email'] = email
-                print ("%s" %data)
-                #self.sendRequest(data)              
+                self.sendRequest(data)              
                
     ####################################################################
     # Slack API Call
     ####################################################################
     def sendRequest(self,data):
         result = requests.post(url=self.URL, data=data)
-        print ("%s" %data)
-        print ("Output is:%s" %result.text)
+        print ("REQUEST: %s" %data)
+        print ("RESPONSE:%s" %result.text)
 
 ########################################################################
 # Usage Function
