@@ -28,6 +28,8 @@
     b. Click on Webhooks in the left navigation, and then press the Add webhook button.
     c. Enter the payload URL
     d. Content Type: select application/json
-    
-    
 
+###################    
+Token Generator    
+##################
+https://api.slack.com/custom-integrations/legacy-tokens
