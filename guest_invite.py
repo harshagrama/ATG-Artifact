@@ -35,8 +35,7 @@ class InviteGuest:
     ####################################################################
     def sendRequest(self,data):
         result = requests.post(url=self.URL, data=data)
-        print ("REQUEST: %s" %data)
-        print ("RESPONSE:%s" %result.text)
+        print ("REQUEST:{} --> RESPONSE:{}".format(data,result.text))
 
 ########################################################################
 # Usage Function
