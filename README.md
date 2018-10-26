@@ -63,7 +63,6 @@ channels: GDKM90001
 ultimate_restricted: 1
 email: abc@gmail.com, abc@slkconsult.com, abc@rediffmail.com
 
-Note: make sure email is the last option in every section
 
 
 

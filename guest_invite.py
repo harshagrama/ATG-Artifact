@@ -2,29 +2,38 @@ import sys
 import requests 
 import ConfigParser
 
+####################################################################
+# Guest Invite Class
+####################################################################
 class InviteGuest:
   
     def __init__(self):
         self.URL = "https://slack.com/api/users.admin.invite"
-   
+
+    ####################################################################
+    # Process the *.ini file and prepare the data
+    ####################################################################
     def getItDone(self,fileName):
         data = {}
         colData = []
+        emails = []
         config = ConfigParser.ConfigParser()
-        config.read("config.ini")
+        config.read(fileName)
         sec = config.sections()
-        
         for section in sec:
             options = config.options(section)
             for option in options:
 		data[option] = config.get(section, option)
                 if option=='email':
                    emails = data[option].split(',')
-                   for email in emails:
-			data[option] = email
-   			self.sendRequest(data)              
+            for email in emails:
+                data['email'] = email
+                print ("%s" %data)
+                #self.sendRequest(data)              
                
-  
+    ####################################################################
+    # Slack API Call
+    ####################################################################
     def sendRequest(self,data):
         result = requests.post(url=self.URL, data=data)
         print ("%s" %data)
