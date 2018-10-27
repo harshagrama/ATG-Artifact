@@ -1,6 +1,6 @@
 
 ##############################################################################
-  Introduction
+#  Introduction
 ##############################################################################
 This is a simple proof-of-concept for managing restricted (single/limited channel) 
 guest users in Slack, Slack channel that guest users are invited to will host 
@@ -10,7 +10,7 @@ Every time a new artifact is produced, subscribed users will be notified to
 download the new version of the artifact
 
 ##############################################################################
-  Create Git Repostiory For Storing Artifact
+#  Create Git Repostiory For Storing Artifact
 ##############################################################################
 1. Create a GitHub account https://help.github.com
 2. create a repository called ATG-Artifact
@@ -22,7 +22,7 @@ download the new version of the artifact
     
 
 ##############################################################################
-  Create Slack Account & Channel for feed
+#  Create Slack Account & Channel for feed
 ##############################################################################
 1. Create a slack account https://slack.com/
 2. Create a channel by name "atg-artifact"
@@ -38,14 +38,14 @@ download the new version of the artifact
     d. In the Content Type: select application/json
 
 ##############################################################################
-  Token Generator    
+#  Token Generator    
 ##############################################################################
 https://api.slack.com/custom-integrations/legacy-tokens
 Since I am, using git as public repository "Git Guardian" script will make sure the token gets disabled,
 when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
 
 ##############################################################################
-python script guest_invite.py 
+#  python script guest_invite.py 
 ##############################################################################
 Purpose of this script is to 
      * Read configuration file for Slack REST API's  attributes and its value
@@ -59,7 +59,7 @@ python guest_invite.py singleChannelOnly.ini
 python guest_invite.py multiChannel.ini
 
 ##############################################################################
-Configuration file is used to manage guest users & channels
+#  Configuration file is used to manage guest users & channels
 ##############################################################################
 * Each configuration file can have multiple channels as a section and
     API attributes as an options.
