@@ -36,8 +36,7 @@ guest users in Slack.
 
 ###  Token Generator    
 * https://api.slack.com/custom-integrations/legacy-tokens
-#### This git is a community version, hence it is a public repository. "Git Guardian" script will make sure the token gets disabled,
-#### when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
+#### This git is a community version, hence it is a public repository. "Git Guardian" script will make sure the token gets disabled, when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
 
 ### Python
 * To install python on linux: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html
