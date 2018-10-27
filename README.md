@@ -8,7 +8,7 @@ Every time a new artifact is produced, subscribed users will be notified to
 download the new version of the artifact
 
 
-#Prerequisites
+#  Prerequisites
 
 ###  Create Git Repostiory For Storing Artifact
 1. Create a GitHub account https://help.github.com
@@ -41,11 +41,11 @@ when ever the "GG" script runs and finds out that a slack token is publicly avai
 
 #  python script guest_invite.py 
 
-##Purpose of this script is to: 
-###Read configuration file for Slack REST API's  attributes and its value
-###For attribute email, which is a coma separated value generate a slack guest invite request
+##  Purpose of this script is to: 
+* Read configuration file for Slack REST API's  attributes and its value
+* Attribute email, which is a coma separated value, for which we generate a slack guest invite request
 
-##"guest_invite.py" takes *.ini file as input argument.
+##  guest_invite.py takes *.ini file as input argument.
 
 ```
 example:
@@ -61,8 +61,8 @@ example:
 * configuration file  "multiChannel.ini" here we add guest users, who can access more than 
     one channel
 
-##For more about supported attributes, please refer to the following link:
-##https://github.com/ErikKalkoken/slackApiDoc/blob/master/users.admin.invite.md
+* For more about supported attributes, please refer to the following link:
+* https://github.com/ErikKalkoken/slackApiDoc/blob/master/users.admin.invite.md
 ```	
 [Channel Name]
 <attribute>:<value>
@@ -81,4 +81,3 @@ email: abc@gmail.com, abc@slkconsult.com, abc@rediffmail.com
 ```
 
 
-##END
