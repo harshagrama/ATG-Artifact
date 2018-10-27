@@ -43,20 +43,25 @@ guest_invite.py takes *.ini file as input argument.
 example:
 python guest_invite.py singleChannelOnly.ini	
 python guest_invite.py multiChannel.ini
+
 ##############################################################################
-*.ini file, section & options
+Configuration fileis are used to manage guest users & channels
+  * Each configuration file can have multiple channels as a section and
+    API attributes as an options.
+  * email attribute can take list email id's with coma seperated 
+  * singleChannelOnly.ini here we add guest users restricted to single channel
+  * multiChannel.ini here we add guest users, who can access more than 
+    one channel	
 ##############################################################################
 [Channel Name]
-token:<value>
-channels:<value>
-ultimate_restricted:<value>
-.
-.
-.
-.
-email:<value>,<value>,<value>.......
+<attribute>:<value>
+<attribute>:<value>
+<attribute>:<value>
+<attribute>:<value>
+email:<value>,<value>,<value>
 
 Example:
+
 [atg-artifact]
 token: xoxp-461571340768-461571341648-465944437334-3d0d32a21acdfda2d235b6cfb783b5e4    
 channels: GDKM90001
