@@ -57,12 +57,10 @@ example:
 ```
 #  Configuration file is used to manage guest users & channels
 
-* Each configuration file can have multiple channels as a section and
-    API attributes as an options.
+* Each configuration file can have multiple channels as a section and API attributes as options.
 * email attribute can take list of email id's with comma separated 
 * configuration file "singleChannelOnly.ini" here we add guest users restricted to single channel
-* configuration file  "multiChannel.ini" here we add guest users, who can access more than 
-    one channel
+* configuration file  "multiChannel.ini" here we add guest users, who can access more than one channel
 
 * For more about supported attributes, please refer to the following link:
 * https://github.com/ErikKalkoken/slackApiDoc/blob/master/users.admin.invite.md
