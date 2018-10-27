@@ -7,7 +7,7 @@ import ConfigParser
 #   Purpose of this class is to read configuration file for the following:
 #     * Slack REST API attributes and its value
 #     * Every email coma seperated value generate a slack 
-#	  guest invite request
+#	guest invite request
 ####################################################################
 class InviteGuest:
   
