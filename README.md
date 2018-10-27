@@ -36,7 +36,7 @@ download the new version of the artifact
 
 ###  Token Generator    
 * https://api.slack.com/custom-integrations/legacy-tokens
-#### Since I am, using git as public repository "Git Guardian" script will make sure the token gets disabled,
+#### This git is a community version, hence it is a public repository. "Git Guardian" script will make sure the token gets disabled,
 when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
 
 #  python script guest_invite.py 
