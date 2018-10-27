@@ -1,6 +1,13 @@
 
-***********ATG Assignment*********************
-This is a simple proof-of-concept for managing restricted (single/limited channel) guest users in Slack
+##############################################################################
+  Introduction
+##############################################################################
+This is a simple proof-of-concept for managing restricted (single/limited channel) 
+guest users in Slack, Slack channel that guest users are invited to will host 
+GIT artifact.
+
+Every time a new artifact is produced, subscribed users will be notified to 
+download the new version of the artifact
 
 ##############################################################################
   Create Git Repostiory For Storing Artifact
@@ -15,7 +22,7 @@ This is a simple proof-of-concept for managing restricted (single/limited channe
     
 
 ##############################################################################
- Create Slack Account & Channel for feed
+  Create Slack Account & Channel for feed
 ##############################################################################
 1. Create a slack account https://slack.com/
 2. Create a channel by name "atg-artifact"
@@ -24,21 +31,28 @@ This is a simple proof-of-concept for managing restricted (single/limited channe
 5. In "Post to Channel" option select "atg-artifact"
 6. click Add GitHub Integration
 7. Copy the payload URL and follow the instruction as per slack documentation on gitHub or follow below steps
-    a. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). Click on the Settings tab in the top navigation.
+    a. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). 
+       Click on the Settings tab in the top navigation.
     b. Click on Webhooks in the left navigation, and then press the Add webhook button.
     c. Enter the payload URL
     d. In the Content Type: select application/json
 
 ##############################################################################
-Token Generator    
+  Token Generator    
 ##############################################################################
 https://api.slack.com/custom-integrations/legacy-tokens
-Since I am, using git as public repository "Git Guardian" script will make sure the token gets disabled when ever the "GG" script runs and finds out that a slack tocken is publicly available on git repository.
+Since I am, using git as public repository "Git Guardian" script will make sure the token gets disabled,
+when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
 
 ##############################################################################
 python script guest_invite.py 
 ##############################################################################
-guest_invite.py takes *.ini file as input argument.
+Purpose of this script is to 
+     * Read configuration file for Slack REST API's  attributes and its value
+     * For attribute email, which is a coma seperated value generate a slack 
+	   guest invite request
+
+"guest_invite.py" takes *.ini file as input argument.
 
 example:
 python guest_invite.py singleChannelOnly.ini	
@@ -46,13 +60,17 @@ python guest_invite.py multiChannel.ini
 
 ##############################################################################
 Configuration fileis are used to manage guest users & channels
-  * Each configuration file can have multiple channels as a section and
+##############################################################################
+* Each configuration file can have multiple channels as a section and
     API attributes as an options.
   * email attribute can take list email id's with coma seperated 
   * singleChannelOnly.ini here we add guest users restricted to single channel
   * multiChannel.ini here we add guest users, who can access more than 
-    one channel	
-##############################################################################
+    one channel
+
+For more about supported attributes, please reffer to the following link:
+https://github.com/ErikKalkoken/slackApiDoc/blob/master/users.admin.invite.md
+	
 [Channel Name]
 <attribute>:<value>
 <attribute>:<value>
