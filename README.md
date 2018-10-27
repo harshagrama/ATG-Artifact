@@ -1,5 +1,6 @@
 
 ***********ATG Assignment*********************
+This is a simple proof-of-concept for managing restricted (single/limited channel) guest users in Slack
 
 ##############################################################################
   Create Git Repostiory For Storing Artifact
@@ -8,7 +9,7 @@
 2. create a repository called ATG-Artifact
 3. Add artifact file to the repository
     a. Clone git repository 
-    b. git add the artifact 
+    b. git add  artifact 
     c. commit artifact 
     d. push the artifact to remote repository
     
@@ -20,20 +21,19 @@
 2. Create a channel by name "atg-artifact"
 3. On Slack go to browse apps -> gitHub Notifications
 4. Click on New Configuration
-5. Post to Channel select "atg-artifact"
+5. In "Post to Channel" option select "atg-artifact"
 6. click Add GitHub Integration
-7. Copy the payload URL and follow the instruction as per slack documentation on gitHub Or follow below steps
+7. Copy the payload URL and follow the instruction as per slack documentation on gitHub or follow below steps
     a. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). Click on the Settings tab in the top navigation.
     b. Click on Webhooks in the left navigation, and then press the Add webhook button.
     c. Enter the payload URL
-    d. Content Type: select application/json
+    d. In the Content Type: select application/json
 
 ##############################################################################
 Token Generator    
 ##############################################################################
 https://api.slack.com/custom-integrations/legacy-tokens
-Since git is a public repository slack good guy will make sure the token gets expired every 24hours are so or when ever the good guy script runs and finds out that a slack tocken is publicly available on git repository.
-
+Since I am, using git as public repository "Git Guardian" script will make sure the token gets disabled when ever the "GG" script runs and finds out that a slack tocken is publicly available on git repository.
 
 ##############################################################################
 python script guest_invite.py 
@@ -41,8 +41,8 @@ python script guest_invite.py
 guest_invite.py takes *.ini file as input argument.
 
 example:
-guest_invite.py singleChannelOnly.ini	
-guest_invite.py multiChannel.ini
+python guest_invite.py singleChannelOnly.ini	
+python guest_invite.py multiChannel.ini
 ##############################################################################
 *.ini file, section & options
 ##############################################################################
@@ -65,4 +65,4 @@ email: abc@gmail.com, abc@slkconsult.com, abc@rediffmail.com
 
 
 
-
+*******************************END**********************************
