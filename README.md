@@ -39,6 +39,10 @@ download the new version of the artifact
 #### This git is a community version, hence it is a public repository. "Git Guardian" script will make sure the token gets disabled,
 when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
 
+### Python
+* To install python on linux: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html
+* To install python on windows: https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html
+
 #  python script guest_invite.py 
 
 ##  Purpose of this script is to: 
