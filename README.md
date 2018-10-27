@@ -48,7 +48,7 @@ guest users in Slack.
 * Read configuration file for Slack REST API's  attributes and its value
 * Attribute email, which is a comma separated value, for which we generate a slack guest invite request
 
-##  guest_invite.py takes *.ini file as input argument.
+ guest_invite.py takes *.ini file as input argument.
 
 ```
 example:
