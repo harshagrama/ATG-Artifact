@@ -1,11 +1,11 @@
 
 #  Introduction
 This is a simple proof-of-concept for managing restricted (single/limited channel) 
-guest users in Slack, Slack channel that guest users are invited to will host 
-GIT artifact.
+guest users in Slack. 
 
-Every time a new artifact is produced, subscribed users will be notified to 
-download the new version of the artifact
+* Slack channel that guest users are invited to will host GIT artifact.
+
+* Every time a new artifact is produced, subscribed users will be notified to download the new version of the artifact
 
 
 #  Prerequisites
@@ -26,7 +26,7 @@ download the new version of the artifact
 3. On Slack go to browse apps -> gitHub Notifications
 4. Click on New Configuration
 5. In "Post to Channel" option select "atg-artifact"
-6. click Add GitHub Integration
+6. Click Add GitHub Integration
 7. Copy the payload URL and follow the instruction as per slack documentation on gitHub or follow below steps
     a. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). 
        Click on the Settings tab in the top navigation.
@@ -37,7 +37,7 @@ download the new version of the artifact
 ###  Token Generator    
 * https://api.slack.com/custom-integrations/legacy-tokens
 #### This git is a community version, hence it is a public repository. "Git Guardian" script will make sure the token gets disabled,
-when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
+#### when ever the "GG" script runs and finds out that a slack token is publicly available on git repository.
 
 ### Python
 * To install python on linux: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html
@@ -47,7 +47,7 @@ when ever the "GG" script runs and finds out that a slack token is publicly avai
 
 ##  Purpose of this script is to: 
 * Read configuration file for Slack REST API's  attributes and its value
-* Attribute email, which is a coma separated value, for which we generate a slack guest invite request
+* Attribute email, which is a comma separated value, for which we generate a slack guest invite request
 
 ##  guest_invite.py takes *.ini file as input argument.
 
@@ -60,7 +60,7 @@ example:
 
 * Each configuration file can have multiple channels as a section and
     API attributes as an options.
-* email attribute can take list of email id's with coma separated 
+* email attribute can take list of email id's with comma separated 
 * configuration file "singleChannelOnly.ini" here we add guest users restricted to single channel
 * configuration file  "multiChannel.ini" here we add guest users, who can access more than 
     one channel
