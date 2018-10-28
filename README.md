@@ -28,8 +28,8 @@ guest users in Slack.
 5. In "Post to Channel" option select "atg-artifact"
 6. Click Add GitHub Integration
 7. Copy the payload URL and follow the instruction as per slack documentation on gitHub or follow below steps
-   1. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). Click on the Settings tab in the top navigation.
-   2. Click on Webhooks in the left navigation, and then press the Add webhook button.
+   1. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). Click on the Settings tab in the top navigation
+   2. Click on Webhooks in the left navigation, and then press the Add webhook button
    3. Enter the payload URL
    4. In the Content Type: select application/json
 
@@ -56,7 +56,7 @@ example:
 ```
 #  Configuration File Is Used To Manage Guest Users & Channels
 
-* Each configuration file can have multiple channels as a section and API attributes as options.
+* Each configuration file can have multiple channels as a section and API attributes as options
 * email attribute can take list of email id's with comma separated 
 * configuration file "singleChannelOnly.ini" for adding  guest users restricted to single channel
 * configuration file  "multiChannel.ini" for adding guest users, who can access more than one channel
