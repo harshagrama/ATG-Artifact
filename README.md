@@ -20,7 +20,7 @@ guest users in Slack.
     4. push the artifact to remote repository
     
 
-###  Create Slack Account & Channel for feed
+###  Create Slack Account & Channel For Feed
 1. Create a slack account https://slack.com/
 2. Create a channel by name "atg-artifact"
 3. On Slack go to browse apps -> gitHub Notifications
@@ -41,9 +41,9 @@ guest users in Slack.
 * To install python on linux: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html
 * To install python on windows: https://www.ics.uci.edu/~pattis/common/handouts/pythoneclipsejava/python.html
 
-#  python script guest_invite.py 
+#  Python Script: "guest_invite.py" 
 
-##  Purpose of this script is to: 
+##  Purpose Of This Script Is To: 
 * Read configuration file for attributes and its value for slack API REST call
 * Attribute email, which is a comma separated value, for which generate a slack guest invite request
 
@@ -54,7 +54,7 @@ example:
    python guest_invite.py singleChannelOnly.ini	
    python guest_invite.py multiChannel.ini
 ```
-#  Configuration file is used to manage guest users & channels
+#  Configuration File Is Used To Manage Guest Users & Channels
 
 * Each configuration file can have multiple channels as a section and API attributes as options.
 * email attribute can take list of email id's with comma separated 
