@@ -28,11 +28,10 @@ guest users in Slack.
 5. In "Post to Channel" option select "atg-artifact"
 6. Click Add GitHub Integration
 7. Copy the payload URL and follow the instruction as per slack documentation on gitHub or follow below steps
-    a. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). 
-       Click on the Settings tab in the top navigation.
-    b. Click on Webhooks in the left navigation, and then press the Add webhook button.
-    c. Enter the payload URL
-    d. In the Content Type: select application/json
+#### a. In your GitHub account, go to the repository that you'd like to monitor (ATG-Artifact). Click on the Settings tab in the top navigation.
+#### b. Click on Webhooks in the left navigation, and then press the Add webhook button.
+#### c. Enter the payload URL
+#### d. In the Content Type: select application/json
 
 ###  Token Generator    
 * https://api.slack.com/custom-integrations/legacy-tokens
