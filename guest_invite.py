@@ -42,7 +42,7 @@ class InviteGuest:
 
 # Usage Function
 def usage():
-    print 'Usage: invite_guest.py <Config YML file>'
+    print 'Usage: invite_guest.py < Config file >'
     print 'eg: python guest_invite.py config.ini'
     sys.exit(2)
 
