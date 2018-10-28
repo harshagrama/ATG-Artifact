@@ -45,8 +45,8 @@ guest users in Slack.
 #  python script guest_invite.py 
 
 ##  Purpose of this script is to: 
-* Read configuration file for Slack REST API's  attributes and its value
-* Attribute email, which is a comma separated value, for which we generate a slack guest invite request
+* Read configuration file for attributes and its value for slack API REST call
+* Attribute email, which is a comma separated value, for which generate a slack guest invite request
 
  guest_invite.py takes *.ini file as input argument.
 
@@ -59,8 +59,8 @@ example:
 
 * Each configuration file can have multiple channels as a section and API attributes as options.
 * email attribute can take list of email id's with comma separated 
-* configuration file "singleChannelOnly.ini" here we add guest users restricted to single channel
-* configuration file  "multiChannel.ini" here we add guest users, who can access more than one channel
+* configuration file "singleChannelOnly.ini" for adding  guest users restricted to single channel
+* configuration file  "multiChannel.ini" for adding guest users, who can access more than one channel
 
 * For more about supported attributes, please refer to the following link:
 * https://github.com/ErikKalkoken/slackApiDoc/blob/master/users.admin.invite.md
