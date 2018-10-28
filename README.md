@@ -3,7 +3,7 @@
 This is a simple proof-of-concept for managing restricted (single/limited channel) 
 guest users in Slack. 
 
-* Slack channel that guest users are invited to will host GIT artifact.
+* Slack channel that guest users are invited, will host GIT artifact
 
 * Every time a new artifact is produced, subscribed users will be notified to download the new version of the artifact
 
